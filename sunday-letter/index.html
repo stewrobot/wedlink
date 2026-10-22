@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2ea">
+  <meta name="description" content="프페와 여왕의 결혼식에 초대합니다. 2030년 10월 15일 오전 11시, 달탐사기지1호.">
+  <meta property="og:title" content="프페와 여왕 — 우리의 다음 계절에게">
+  <meta property="og:description" content="햇살과 바다를 담아 보낸 편지 같은 초대장">
+  <meta property="og:image" content="https://stewrobot.github.io/wedlink/sunday-letter/hero.png">
+  <title>프페 &amp; 여왕 — 우리의 다음 계절에게</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="../" aria-label="WedLink 테마 목록">WEDLINK <span>· P&amp;Y</span></a>
+    <a class="collection-link" href="../">THE INVITATION COLLECTION <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__image" src="hero.png" alt="햇살이 비치는 바닷가 풀밭에서 나란히 서 있는 신랑과 신부의 뒷모습">
+      <div class="hero__veil"></div>
+      <div class="hero__copy">
+        <p class="eyebrow">A LETTER FOR OUR NEXT SEASON</p>
+        <p class="hero__date">TUESDAY · OCTOBER 15 · 2030</p>
+        <h1 id="hero-title">우리의 다음<br>계절에게.</h1>
+        <p class="hero__names">프페 <span>&amp;</span> 여왕</p>
+      </div>
+      <a class="scroll-cue" href="#letter">READ OUR LETTER <span aria-hidden="true">↓</span></a>
+      <span class="hero__index">INVITATION N° 02</span>
+    </section>
+
+    <section class="letter section" id="letter">
+      <div class="section-label"><span>01</span><span>A NOTE FROM US</span></div>
+      <div class="letter__body">
+        <p class="eyebrow">DEAR OUR DEAR ONES,</p>
+        <h2>두 사람이 만나<br>한 계절이 되었습니다.</h2>
+        <p class="body-copy">서로의 하루에 작은 빛이 되어온 저희가<br class="desktop-break"> 이제 같은 방향을 바라보며 걸어가려 합니다.</p>
+        <p class="body-copy">햇살 좋은 가을날, 저희의 새로운 시작에<br class="desktop-break"> 소중한 분들을 모시고 싶습니다.</p>
+        <div class="signature"><span>WITH LOVE,</span><strong>프페 &amp; 여왕</strong></div>
+      </div>
+    </section>
+
+    <section class="photo-note" aria-label="초대장 사진">
+      <img src="hero.png" alt="바다를 바라보며 손을 잡은 두 사람">
+      <p>THE BEGINNING OF<br><em>EVERYTHING, TOGETHER.</em></p>
+      <span>2030 — 10 — 15</span>
+    </section>
+
+    <section class="details section" id="details">
+      <div class="section-label"><span>02</span><span>THE DAY WE BEGIN</span></div>
+      <div class="details__intro"><p class="eyebrow">PLEASE SAVE THE DATE</p><h2>그날, 함께해 주세요.</h2></div>
+      <div class="details__grid">
+        <article class="detail detail--date">
+          <span class="detail__tag">WHEN</span>
+          <p class="detail__weekday">TUESDAY</p>
+          <p class="detail__day">15</p>
+          <p class="detail__month">OCTOBER · 2030</p>
+          <span class="detail__time">오전 11시</span>
+          <button class="outline-button" id="calendar" type="button">캘린더에 담기 <span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="detail detail--place">
+          <span class="detail__tag">WHERE</span>
+          <div class="place-mark" aria-hidden="true"></div>
+          <p class="place-caption">OUR CEREMONY</p>
+          <h3>달탐사기지1호</h3>
+          <p class="place-note">예식 장소의 상세 안내는<br>초대장을 받은 분께 별도로 전해드릴게요.</p>
+          <button class="outline-button" id="copy-place" type="button">장소명 복사 <span aria-hidden="true">↗</span></button>
+        </article>
+      </div>
+      <p class="details__aside">멀리서 오시는 분들도 편히 오실 수 있도록<br>찾아오시는 방법을 추후 안내드리겠습니다.</p>
+    </section>
+
+    <section class="guestbook section" id="guestbook">
+      <div class="section-label"><span>03</span><span>A PAGE FOR YOUR WORDS</span></div>
+      <div class="guestbook__head"><p class="eyebrow">LEAVE A LITTLE LIGHT</p><h2>당신의 축하를<br><em>오래 간직할게요.</em></h2><p id="guestbook-description">방명록 저장 방식을 확인하는 중입니다.</p></div>
+      <form id="guest-form" class="guest-form">
+        <label for="name">이름</label><input id="name" name="name" maxlength="24" autocomplete="name" required placeholder="이름을 적어주세요">
+        <label for="message">축하의 한마디</label><textarea id="message" name="message" rows="3" maxlength="240" required placeholder="두 사람에게 전하고 싶은 마음"></textarea>
+        <button class="submit-button" type="submit">마음 남기기 <span aria-hidden="true">↗</span></button>
+      </form>
+      <div id="guest-list" class="guest-list" aria-live="polite"></div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">UNTIL THE DAY WE SAY I DO</p>
+      <h2>그날의 햇살 아래,<br>기다리고 있을게요.</h2>
+      <p class="closing__names">프페 <span>&amp;</span> 여왕</p>
+      <button class="share-button" id="share" type="button">초대장을 전해주세요 <span aria-hidden="true">↗</span></button>
+      <a class="back-link" href="../">다른 초대장도 둘러보기</a>
+    </section>
+  </main>
+  <footer class="site-footer"><span>THE SUNDAY LETTER</span><span>프페 &amp; 여왕 · 2030</span><span>MADE WITH LOVE</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../config.js"></script>
+  <script src="script.js?v=2"></script>
+</body>
+</html>
