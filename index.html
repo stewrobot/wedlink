@@ -8,7 +8,7 @@
   <title>WedLink — 초대장의 여러 장면</title>
   <style>
     :root{color-scheme:light;--paper:#f4f0e8;--ink:#26352f;--muted:#718078;--line:#d8ded5;--serif:Georgia,"Noto Serif KR",serif;--sans:system-ui,"Noto Sans KR",sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}a{color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 28px}.topbar{display:flex;align-items:center;justify-content:space-between;padding:26px 0;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.18em;text-transform:uppercase}.brand{font-weight:750}.edition{color:var(--muted)}.intro{padding:clamp(64px,11vw,132px) 0 48px}.eyebrow{font-size:11px;letter-spacing:.2em;color:#7a8b78;text-transform:uppercase}.intro h1{font-family:var(--serif);font-weight:400;letter-spacing:-.07em;font-size:clamp(44px,8vw,92px);line-height:1.12;margin:22px 0}.intro h1 em{font-weight:400;color:#72826f}.intro p{color:#66736c;line-height:1.85;margin:0;max-width:480px;font-size:15px}.themes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding:18px 0 100px}.theme{display:block;text-decoration:none;background:#fffefa;border:1px solid #e3e2d9;transition:transform .25s,box-shadow .25s;overflow:hidden}.theme:hover,.theme:focus-visible{transform:translateY(-4px);box-shadow:0 18px 44px #26352f18;outline:2px solid #70836f;outline-offset:3px}.poster{height:clamp(230px,37vw,430px);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:28px;color:white}.poster::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#17231fe8,transparent 65%)}.poster>*{position:relative;z-index:1}.poster--cinema{background:radial-gradient(ellipse at 52% 26%,#f3deba 0 2%,transparent 2.4%),radial-gradient(ellipse at 50% 45%,#7d3028 0 12%,transparent 12.5%),linear-gradient(135deg,#301c23,#934c3c 55%,#d9ab78)}.ticket{position:absolute;inset:12% 26%;border:1px solid #f7dfb77a;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--serif);font-size:clamp(25px,4vw,48px);letter-spacing:-.05em;line-height:1.15;color:#f7ecd7}.poster--letter{background:#d9dfd2}.poster--letter img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 56%;filter:saturate(.82)}.poster--letter::after{background:linear-gradient(0deg,#1b2823d9,transparent 74%)}.theme-title{font-family:var(--serif);font-size:clamp(26px,4vw,44px);line-height:1.12;letter-spacing:-.04em}.theme-kicker{font-size:10px;letter-spacing:.2em;margin:0 0 12px;color:#e2d5c1}.theme-info{display:flex;align-items:center;justify-content:space-between;padding:23px 26px}.theme-info strong{display:block;font-size:16px;font-weight:650}.theme-info small{display:block;color:var(--muted);margin-top:7px;font-size:12px}.arrow{font-size:22px;color:#718078}.foot{padding:0 0 36px;color:var(--muted);font-size:11px;letter-spacing:.08em}.foot span{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between}@media(max-width:680px){.wrap{padding:0 18px}.topbar{padding:20px 0}.themes{grid-template-columns:1fr;gap:16px;padding-bottom:68px}.poster{height:330px}.intro{padding:62px 0 30px}.theme-info{padding:20px}.foot span{gap:16px;flex-wrap:wrap}}
-  </style>
+  .poster--hanji{background:#e8e7d9;color:#30372f}.poster--hanji::after{background:linear-gradient(120deg,transparent,#64715425)}.poster--hanji .theme-kicker{color:#62685d}.poster--hanji .theme-title{font-family:Batang,serif}.poster--blue{background:#123bd6}.poster--blue::after{background:none}.poster--blue .theme-title{font-family:Arial,sans-serif;font-weight:800;font-size:48px}.poster--blue .theme-kicker{color:#d9fa6d}.poster--lunar{background:radial-gradient(circle at 68% 30%,#a6afb0 0,#53616b 19%,#182430 37%,#111821 65%)}.poster--lunar .theme-title{font-size:34px}</style>
 </head>
 <body>
   <div class="wrap">
@@ -17,7 +17,7 @@
       <section class="intro" aria-labelledby="page-title">
         <span class="eyebrow">A day, told in different ways</span>
         <h1 id="page-title">초대장의<br><em>여러 장면.</em></h1>
-        <p>프페와 여왕의 하루를 담은 두 가지 디자인입니다.<br>마음에 드는 초대장을 눌러 열어보세요.</p>
+        <p>프페와 여왕의 하루를 담은 다섯 가지 디자인입니다.<br>마음에 드는 초대장을 눌러 열어보세요.</p>
       </section>
       <nav class="themes" aria-label="청첩장 테마 선택">
         <a class="theme" href="./cinema-premiere/">
@@ -28,7 +28,10 @@
           <div class="poster poster--letter"><img src="./sunday-letter/hero.png" alt="맑은 바닷가 풀밭에 선 신랑신부의 뒷모습"><div><p class="theme-kicker">A LETTER FOR SUNDAY</p><div class="theme-title">우리의 다음<br>계절에게</div></div></div>
           <div class="theme-info"><div><strong>02 · The Sunday Letter</strong><small>햇살과 바다를 담은 편지 같은 초대장</small></div><span class="arrow" aria-hidden="true">↗</span></div>
         </a>
-      </nav>
+      <a class="theme" href="./hanji-vows/"><div class="poster poster--hanji"><div><p class="theme-kicker">HANJI VOWS</p><div class="theme-title">마음을<br>포개어</div></div></div><div class="theme-info"><div><strong>03 · 여백</strong><small>한지와 먹색, 고요하고 단정한 약속</small></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="theme" href="./blue-hour/"><div class="poster poster--blue"><div><p class="theme-kicker">BLUE HOUR</p><div class="theme-title">You, me<br><span>& forever.</span></div></div></div><div class="theme-info"><div><strong>04 · Blue Hour</strong><small>코발트 블루, 자유롭고 경쾌한 시작</small></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="theme" href="./lunar-archive/"><div class="poster poster--lunar"><div><p class="theme-kicker">LUNAR ARCHIVE</p><div class="theme-title">수많은 궤도 끝에,<br>우리.</div></div></div><div class="theme-info"><div><strong>05 · Lunar Archive</strong><small>달빛과 궤도, 두 사람의 우주</small></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+</nav>
     </main>
     <footer class="foot"><span><span>프페 &amp; 여왕</span><span>2030년 10월 15일 · 오전 11시</span><span>달탐사기지1호</span></span></footer>
   </div>
